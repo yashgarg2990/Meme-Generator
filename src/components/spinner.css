@@ -1,0 +1,87 @@
+.custom-loader {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    border:4px solid #0000;
+    border-radius: 50%;
+    border-color:#E4E4ED #0000;
+    animation: s6 1s infinite linear;
+  }
+  .custom-loader::before,
+  .custom-loader::after {    
+    content:"";
+    grid-area: 1/1;
+    margin:2px;
+    border:inherit;
+    border-radius: 50%;
+  }
+  .custom-loader::before {
+    border-color:#766DF4 #0000;
+    animation:inherit; 
+    animation-duration: .5s;
+    animation-direction: reverse;
+  }
+  .custom-loader::after {
+    margin:8px;
+  }
+  
+  @keyframes s6 { 
+    100%{transform: rotate(1turn)}
+  }
+
+  .container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(87, 189, 87);
+    width: 60%;
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Add padding for better aesthetics */
+    border-radius: 5%;
+  }
+  .container-blue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(87, 114, 189);
+    width: 60%;
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Add padding for better aesthetics */
+    border-radius: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  h4 {
+    margin-bottom: 20px; /* Add margin below the heading */
+  }
+  
+  img {
+    width: 400px; /* Adjust the width as needed */
+     height: auto;/* Maintain aspect ratio */
+    margin: 10px 0; /* Add margin above and below the image */
+  }
+  
+  button {
+    padding: 10px 0; /* Adjust padding, keeping 10px at the top and bottom, but 0 on the left and right */
+    width: 500px; /* Set the width to your desired value */
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+  }
+  
+  .tagname{
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+
+  }
+  
+  /* You can add more styling to the Spinner component if needed */
+  
